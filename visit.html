@@ -1,18 +1,60 @@
-<form id="visit-form">
-  <label for="name">Name</label>
-  <input type="text" id="name" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Visit - Search and Rescue</title>
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <img src="logo.png" alt="Bjorgunarsveitin Skagfirdingasveit logo" class="site-logo" />
+      <div>
+        <h1>Search and Rescue - Skagfirðingasveit</h1>
+        <p class="tagline">Icelandic volunteer rescue team</p>
+      </div>
+    </div>
 
-  <label for="email">Email</label>
-  <input type="email" id="email" />
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="podcasts.html">Podcasts</a>
+      <a href="videos.html">Videos</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+  </header>
 
-  <label for="date">Preferred date</label>
-  <input type="date" id="date" />
+  <main class="page-content">
+    <h2>Book a Visit</h2>
+    <p>
+      Send us a visit request and we will get back to you by email.
+    </p>
 
-  <label for="group">Group size</label>
-  <input type="number" id="group" min="1" />
+    <form id="visit-form" class="visit-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
 
-  <label for="message">Message</label>
-  <textarea id="message" rows="5"></textarea>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
 
-  <button type="submit" class="hero-button">Send Request</button>
-</form>
+      <label for="date">Preferred date</label>
+      <input type="date" id="date" name="date" />
+
+      <label for="group">Group size</label>
+      <input type="number" id="group" name="group" min="1" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit" class="hero-button">Send Request</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Search and Rescue - Skagfirðingasveit</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
