@@ -77,7 +77,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(90deg, var(--sar-red), var(--sar-blue));
+  background: hotpink;
   color: white;
   padding: 90px 20px;
   text-align: center;
