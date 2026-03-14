@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search and Rescue - Skagfirðingasveit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <div class="logo-placeholder">LOGO</div>
+      <div>
+        <h1>Search and Rescue - Skagfirðingasveit</h1>
+        <p class="tagline">Icelandic volunteer rescue team</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#stories">Stories</a>
+      <a href="#podcasts">Podcasts</a>
+      <a href="#videos">Videos</a>
+      <a href="#donate">Donate</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Book a visit to the rescue team</h2>
+      <p>
+        Visit our Icelandic Search and Rescue team and learn about our work,
+        equipment, training, and rescue operations in Skagafjörður.
+      </p>
+      <a href="#" class="hero-button">Book a Visit</a>
+    </div>
+  </section>
+
+  <main class="grid-section">
+    <section class="card" id="stories">
+      <h3>Stories</h3>
+      <p>
+        Read stories from missions, training, volunteer life, and real
+        experiences from Icelandic Search and Rescue work.
+      </p>
+      <a href="#">Read Stories</a>
+    </section>
+
+    <section class="card" id="podcasts">
+      <h3>Podcasts</h3>
+      <p>
+        Listen to conversations, interviews, and stories from rescuers,
+        volunteers, and guests connected to rescue work and Iceland.
+      </p>
+      <a href="#">Listen Now</a>
+    </section>
+
+    <section class="card" id="videos">
+      <h3>Videos</h3>
+      <p>
+        Watch training sessions, mission footage, educational content, and
+        behind-the-scenes videos from the rescue team.
+      </p>
+      <a href="#">Watch Videos</a>
+    </section>
+
+    <section class="card" id="donate">
+      <h3>Donate</h3>
+      <p>
+        Support the volunteer rescue team. Donations help with equipment,
+        training, safety, and keeping operations running.
+      </p>
+      <a href="#">Support Us</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Search and Rescue - Skagfirðingasveit</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
