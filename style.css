@@ -173,7 +173,23 @@ body {
   color: var(--sar-grey);
   margin-top: 40px;
 }
+.intro-strip {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  background: white;
+  border: 1px solid var(--sar-border);
+  border-radius: 14px;
+  padding: 22px 24px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
 
+.intro-strip p {
+  color: var(--sar-grey);
+  font-size: 1rem;
+}
 @media (max-width: 1000px) {
   .grid-section {
     grid-template-columns: repeat(2, 1fr);
