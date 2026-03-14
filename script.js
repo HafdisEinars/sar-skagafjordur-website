@@ -65,7 +65,7 @@ Message:
 ${message}`;
 
       window.location.href =
-        `mailto:YOUR_EMAIL_HERE?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        `mailto:skagfirdingasveitskr@gmial.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
 });
