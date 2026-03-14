@@ -39,7 +39,6 @@ ${message}
   });
 });
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Website loaded");
 
   const visitForm = document.getElementById("visit-form");
 
