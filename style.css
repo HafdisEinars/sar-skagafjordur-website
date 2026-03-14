@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #111;
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-placeholder {
+  width: 70px;
+  height: 70px;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.site-header h1 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.tagline {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #0b3d91;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: #c1121f;
+}
+
+.hero {
+  background: linear-gradient(90deg, #c1121f, #0b3d91);
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: white;
+  color: #111;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.hero-button:hover {
+  background-color: #f1f1f1;
+}
+
+.grid-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #dbe3ee;
+  border-radius: 14px;
+  padding: 24px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #0b3d91;
+}
+
+.card p {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.card a {
+  text-decoration: none;
+  color: #c1121f;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-top: 2px solid #e5e7eb;
+  color: #666;
+  margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+  .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+}
