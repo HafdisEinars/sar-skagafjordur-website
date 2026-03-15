@@ -77,12 +77,17 @@ body {
 }
 
 .hero {
-  background: linear-gradient(90deg, #c1121f, #0b3d91);
+  background-image: linear-gradient(
+    rgba(193, 18, 31, 0.8),
+    rgba(11, 61, 145, 0.8)
+  ), url("rescue1.jpg");
+
+  background-size: cover;
+  background-position: center;
   color: white;
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
-
 .hero-content {
   max-width: 850px;
   margin: 0 auto;
