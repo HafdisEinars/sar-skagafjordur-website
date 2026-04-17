@@ -7,6 +7,7 @@ body {
   margin: 0;
   background: #f5f5f5;
   color: #111;
+  line-height: 1.5;
 }
 
 /* HEADER */
@@ -19,21 +20,35 @@ body {
 
 .site-header h1 {
   margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
 }
 
 /* HERO */
 .hero {
-  height: 300px;
-  background: #444; /* skiptu þessu út fyrir mynd síðar */
+  height: 320px;
+  background: linear-gradient(135deg, #111111, #2b2b2b);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 800px;
 }
 
 .hero-content h2 {
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+}
+
+.hero-content p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #e5e5e5;
 }
 
 /* CARDS */
@@ -43,66 +58,164 @@ body {
   gap: 20px;
   padding: 40px 20px;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
-  background: white;
-  padding: 30px;
-  text-align: center;
   width: 22%;
   min-width: 220px;
-  border-radius: 10px;
+  padding: 30px 20px;
+  border-radius: 12px;
   text-decoration: none;
-  color: black;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.4rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.16);
+}
+
+/* CARD COLORS */
+.card-red {
+  background: #d52b1e;
+  color: white;
+}
+
+.card-dark {
+  background: #1f2937;
+  color: white;
+}
+
+.card-light {
+  background: #e5e7eb;
+  color: #111;
+}
+
+.card-outline {
+  background: white;
+  color: #d52b1e;
+  border: 2px solid #d52b1e;
 }
 
 /* CONTENT */
 .content {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #111;
+}
+
+.content p {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.content-alt {
+  background: #eeeeee;
+  max-width: 100%;
+  padding-left: calc((100% - 900px) / 2 + 20px);
+  padding-right: calc((100% - 900px) / 2 + 20px);
 }
 
 /* BOOKING */
 .booking {
-  background: #ddd;
-  padding: 40px 20px;
+  background: #dcdcdc;
+  padding: 50px 20px;
   text-align: center;
+}
+
+.booking h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.booking p {
+  margin-bottom: 25px;
+  color: #333;
 }
 
 .booking form {
   max-width: 600px;
-  margin: auto;
+  margin: 0 auto;
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
 .booking input,
 .booking button {
-  padding: 12px;
+  padding: 14px;
   font-size: 16px;
+  border-radius: 8px;
+}
+
+.booking input {
+  border: 1px solid #ccc;
 }
 
 .booking button {
-  background: red;
+  background: #d52b1e;
   color: white;
   border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
+.booking button:hover {
+  background: #b32015;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* MOBILE */
 @media (max-width: 900px) {
   .card {
     width: 45%;
   }
+
+  .content-alt {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 600px) {
+  .hero {
+    height: 260px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
   .card {
     width: 100%;
   }
