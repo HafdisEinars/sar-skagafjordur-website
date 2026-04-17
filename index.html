@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skagfirðingasveit</title>
-  <link rel="stylesheet" href="style.css?v=12" />
+  <link rel="stylesheet" href="style.css?v=20" />
 </head>
 <body>
 
@@ -12,6 +12,7 @@
     <h1>Skagfirðingasveit</h1>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <h2>Search and Rescue</h2>
@@ -19,6 +20,7 @@
     </div>
   </section>
 
+  <!-- CARDS -->
   <section class="cards">
     <a href="#stories" class="card card-red">
       <h3>Stories</h3>
@@ -26,10 +28,9 @@
     </a>
 
     <a
-      href="https://l.facebook.com/l.php?u=https%3A%2F%2Fopen.spotify.com%2Fepisode%2F5WemZjxhCFaWgqtia3a4hN%3Fsi%3DlrIwUyR9Q-yarfCvTdDmVQ%26fbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExU1JmbjFXUlFrbFA1SUZCUHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7ZadWtS3IjY4rt5KyEkQmnPKTzz5NukWeKBm6cqNi1UPsOaD0YHCop0F4XZQ_aem_cbi2tz_c2PviO0HJmZ8SVg&h=AT6iplH5GUl3JTD5vVOUZosXt4_Fh9cXc29M9iLDaHqww8ktqW_oqyyCalx930eiCQIrcxMtQ0ool9SjotLMRZ75JWWKMzPFcF52adSLeTpY7hS4XukHvyE4G0Wv82CUoYk"
+      href="https://open.spotify.com/episode/5WemZjxhCFaWgqtia3a4hN"
       class="card card-dark"
       target="_blank"
-      rel="noopener noreferrer"
     >
       <h3>Podcasts</h3>
       <p>Hlustaðu á nýjasta þáttinn</p>
@@ -41,68 +42,41 @@
     </a>
 
     <a
-      href="https://l.facebook.com/l.php?u=https%3A%2F%2Fskagfirdingasveit.glaze.is%2Fdonations%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExU1JmbjFXUlFrbFA1SUZCUHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR6gvfRuDCSe2dzd27GEtHxl5rnVRjWKJ_xLJ6A-r4bZ1_eSYd2v2fOpPOHwSQ_aem_ip5Oh8_y2MEEwXHBPlp-eg&h=AT6iplH5GUl3JTD5vVOUZosXt4_Fh9cXc29M9iLDaHqww8ktqW_oqyyCalx930eiCQIrcxMtQ0ool9SjotLMRZ75JWWKMzPFcF52adSLeTpY7hS4XukHvyE4G0Wv82CUoYk"
+      href="https://skagfirdingasveit.glaze.is/donations"
       class="card card-outline"
       target="_blank"
-      rel="noopener noreferrer"
     >
       <h3>Donate</h3>
-      <p>Styddu starfið okkar</p>
+      <p>Styðdu starfið okkar</p>
     </a>
   </section>
 
+  <!-- CONTENT -->
   <section id="stories" class="content">
     <h2>Stories</h2>
     <p>
-      Hér geturðu sett inn sögur úr starfinu, reynslusögur, viðtöl eða frásagnir af útköllum,
-      æfingum og samfélagsverkefnum.
+      Hér geturðu sett inn sögur úr starfinu, reynslusögur og frásagnir af útköllum.
     </p>
   </section>
 
   <section id="videos" class="content content-alt">
     <h2>Videos</h2>
     <p>
-      Hér geturðu sett inn myndbönd, tengla á YouTube, Facebook-vídeó eða annað myndefni frá starfi sveitarinnar.
+      Hér geturðu sett inn myndbönd eða tengla á YouTube og Facebook efni.
     </p>
   </section>
 
+  <!-- BOOKING -->
   <section class="booking">
     <h2>Bóka heimsókn</h2>
-    <p>Sendu inn fyrirspurn og við höfum samband.</p>
+    <p>Smelltu hér til að senda bókunarbeiðni.</p>
 
-    <form id="visit-form">
-      <input type="text" id="name" placeholder="Nafn" required />
-      <input type="email" id="email" placeholder="Netfang" required />
-      <input type="date" id="date" required />
-      <input type="number" id="group" placeholder="Fjöldi" min="1" required />
-      <button type="submit">Senda</button>
-    </form>
+    <a href="visit.html" class="booking-button">Bóka heimsókn</a>
   </section>
 
   <footer class="site-footer">
     <p>© 2026 Skagfirðingasveit</p>
   </footer>
-
-  <script>
-    const visitForm = document.getElementById("visit-form");
-
-    if (visitForm) {
-      visitForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const date = document.getElementById("date").value;
-        const group = document.getElementById("group").value;
-
-        alert(
-          `Takk fyrir, ${name}! Við höfum móttekið fyrirspurnina þína.\n\nNetfang: ${email}\nDagsetning: ${date}\nFjöldi: ${group}`
-        );
-
-        visitForm.reset();
-      });
-    }
-  </script>
 
 </body>
 </html>
