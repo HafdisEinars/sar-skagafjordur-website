@@ -1,89 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="is">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search and Rescue - Skagfirðingasveit</title>
-<link rel="stylesheet" href="style.css?v=2" />
+  <title>Skagfirðingasveit</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo-area">
-<img src="logo.png" alt="Bjorgunarsveitin Skagfirdingasveit logo" class="site-logo" />
-      <div>
-        <h1>Search and Rescue - Skagfirðingasveit</h1>
-        <p class="tagline">Icelandic volunteer rescue team</p>
-      </div>
-    </div>
 
-    <nav class="main-nav">
-      <a href="#stories">Stories</a>
-      <a href="#podcasts">Podcasts</a>
-      <a href="#videos">Videos</a>
-      <a href="#donate">Donate</a>
-    </nav>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo">Skagfirðingasveit</div>
+
+      <nav class="nav-menu">
+        <a href="#about">Um okkur</a>
+        <a href="#visits">Heimsóknir</a>
+        <a href="#donate">Styrkja</a>
+        <a href="#contact">Hafa samband</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero section -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h2>Book a visit to the rescue team</h2>
-      <p>
-        Visit our Icelandic Search and Rescue team and learn about our work,
-        equipment, training, and rescue operations in Skagafjörður.
-      </p>
-<a href="visit.html" class="hero-button">Book a Visit</a>
+      <h1>Björgunarsveitin Skagfirðingasveit</h1>
+      <p>Við stöndum vaktina þegar mestu máli skiptir.</p>
     </div>
   </section>
-<section class="intro-strip">
-  <p>
-    A volunteer Search and Rescue team in Skagafjörður, Iceland — sharing stories,
-    podcasts, videos, and ways to support our work.
-  </p>
-  </p>
-</section>
-</section>
-  <main class="grid-section">
-    <section class="card" id="stories">
-      <h3>Stories</h3>
-      <p>
-        Read stories from missions, training, volunteer life, and real
-        experiences from Icelandic Search and Rescue work.
-      </p>
-      <a href="#">Read Stories</a>
-    </section>
 
-    <section class="card" id="podcasts">
-      <h3>Podcasts</h3>
-      <p>
-        Listen to conversations, interviews, and stories from rescuers,
-        volunteers, and guests connected to rescue work and Iceland.
-      </p>
-      <a href="#">Listen Now</a>
-    </section>
+  <!-- Booking bar -->
+  <section class="booking-wrapper">
+    <div class="booking-bar">
+      <h2>Bóka heimsókn</h2>
 
-    <section class="card" id="videos">
-      <h3>Videos</h3>
-      <p>
-        Watch training sessions, mission footage, educational content, and
-        behind-the-scenes videos from the rescue team.
-      </p>
-      <a href="#">Watch Videos</a>
-    </section>
+      <form class="booking-form" id="visit-form">
+        <input type="text" id="name" placeholder="Nafn" required />
+        <input type="email" id="email" placeholder="Netfang" required />
+        <input type="date" id="date" required />
+        <input type="number" id="group" placeholder="Fjöldi í hópi" min="1" required />
+        <button type="submit">Senda fyrirspurn</button>
+      </form>
+    </div>
+  </section>
 
-    <section class="card" id="donate">
-      <h3>Donate</h3>
+  <!-- About -->
+  <section class="content-section" id="about">
+    <div class="container">
+      <h2>Um okkur</h2>
       <p>
-        Support the volunteer rescue team. Donations help with equipment,
-        training, safety, and keeping operations running.
+        Skagfirðingasveit sinnir fjölbreyttum verkefnum í þágu samfélagsins, allt frá leit og björgun
+        til forvarna og fræðslu. Hér getur þú kynnt þér starfsemina og bókað heimsókn.
       </p>
-      <a href="#">Support Us</a>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- Visits -->
+  <section class="content-section light" id="visits">
+    <div class="container">
+      <h2>Heimsóknir</h2>
+      <p>
+        Við tökum á móti hópum og kynnum starf björgunarsveitarinnar, búnað, aðstöðu og verkefni.
+      </p>
+    </div>
+  </section>
+
+  <!-- Donate -->
+  <section class="content-section" id="donate">
+    <div class="container">
+      <h2>Styrkja starfið</h2>
+      <p>
+        Hægt er að styðja starf sveitarinnar með framlagi. Settu hér inn tengil á greiðslugátt eða styrktarsíðu.
+      </p>
+      <a class="donate-button" href="#">Styrkja núna</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="content-section light" id="contact">
+    <div class="container">
+      <h2>Hafa samband</h2>
+      <p>Netfang: info@sarice.is</p>
+      <p>Sími: 000 0000</p>
+    </div>
+  </section>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Search and Rescue - Skagfirðingasveit</p>
+    <p>© 2026 Skagfirðingasveit</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const visitForm = document.getElementById("visit-form");
+
+    if (visitForm) {
+      visitForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const date = document.getElementById("date").value;
+        const group = document.getElementById("group").value;
+
+        alert(
+          `Takk fyrir, ${name}!\\n\\nVið höfum móttekið fyrirspurnina þína.\\nNetfang: ${email}\\nDagsetning: ${date}\\nFjöldi í hópi: ${group}`
+        );
+
+        visitForm.reset();
+      });
+    }
+  </script>
+
 </body>
 </html>
