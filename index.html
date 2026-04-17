@@ -8,11 +8,9 @@
 </head>
 <body>
 
-  <!-- Header / Navigation -->
   <header class="site-header">
     <div class="nav-container">
       <div class="logo">Skagfirðingasveit</div>
-
       <nav class="nav-menu">
         <a href="#about">Um okkur</a>
         <a href="#visits">Heimsóknir</a>
@@ -22,7 +20,6 @@
     </div>
   </header>
 
-  <!-- Hero section -->
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -31,59 +28,84 @@
     </div>
   </section>
 
-  <!-- Booking bar -->
-  <section class="booking-wrapper">
-    <div class="booking-bar">
+  <section class="cards-section">
+    <div class="cards-container">
+      <a href="#about" class="card">
+        <h3>Um okkur</h3>
+        <p>Kynntu þér starfsemi sveitarinnar og hlutverk hennar í samfélaginu.</p>
+      </a>
+
+      <a href="#visits" class="card">
+        <h3>Heimsóknir</h3>
+        <p>Fræðsla, kynningar og heimsóknir fyrir hópa og gesti.</p>
+      </a>
+
+      <a href="#donate" class="card">
+        <h3>Styrkja</h3>
+        <p>Styðjið starfið okkar með framlagi eða styrk.</p>
+      </a>
+
+      <a href="#contact" class="card">
+        <h3>Hafa samband</h3>
+        <p>Hafðu samband ef þú vilt fá frekari upplýsingar.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="content-section" id="about">
+    <div class="container">
+      <h2>Um okkur</h2>
+      <p>
+        Skagfirðingasveit sinnir fjölbreyttum verkefnum í þágu samfélagsins, þar á meðal
+        leit, björgun, viðbragðsverkefnum, forvörnum og fræðslu. Markmið okkar er að vera
+        tilbúin þegar á reynir og miðla þekkingu um öryggi og björgunarstörf.
+      </p>
+    </div>
+  </section>
+
+  <section class="content-section light" id="visits">
+    <div class="container">
+      <h2>Heimsóknir</h2>
+      <p>
+        Við bjóðum hópum, skólum og öðrum gestum í heimsókn þar sem hægt er að fræðast um
+        starf sveitarinnar, búnað, aðstöðu og verkefni. Bókunarformið er neðst á síðunni.
+      </p>
+    </div>
+  </section>
+
+  <section class="content-section" id="donate">
+    <div class="container">
+      <h2>Styrkja starfið</h2>
+      <p>
+        Starf björgunarsveitarinnar byggir að stórum hluta á stuðningi samfélagsins. Hér getur
+        þú sett inn tengil á greiðslugátt, styrktarsíðu eða upplýsingar um hvernig hægt er að styðja við starfið.
+      </p>
+      <a class="donate-button" href="#">Styrkja núna</a>
+    </div>
+  </section>
+
+  <section class="content-section light" id="contact">
+    <div class="container">
+      <h2>Hafa samband</h2>
+      <p>Netfang: info@sarice.is</p>
+      <p>Sími: 000 0000</p>
+      <p>Heimilisfang: Settu heimilisfang hér</p>
+    </div>
+  </section>
+
+  <section class="booking-section" id="booking">
+    <div class="booking-container">
       <h2>Bóka heimsókn</h2>
+      <p>Sendu inn fyrirspurn og við höfum samband.</p>
 
       <form class="booking-form" id="visit-form">
         <input type="text" id="name" placeholder="Nafn" required />
         <input type="email" id="email" placeholder="Netfang" required />
         <input type="date" id="date" required />
         <input type="number" id="group" placeholder="Fjöldi í hópi" min="1" required />
+        <textarea id="message" placeholder="Athugasemdir eða nánari upplýsingar"></textarea>
         <button type="submit">Senda fyrirspurn</button>
       </form>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="content-section" id="about">
-    <div class="container">
-      <h2>Um okkur</h2>
-      <p>
-        Skagfirðingasveit sinnir fjölbreyttum verkefnum í þágu samfélagsins, allt frá leit og björgun
-        til forvarna og fræðslu. Hér getur þú kynnt þér starfsemina og bókað heimsókn.
-      </p>
-    </div>
-  </section>
-
-  <!-- Visits -->
-  <section class="content-section light" id="visits">
-    <div class="container">
-      <h2>Heimsóknir</h2>
-      <p>
-        Við tökum á móti hópum og kynnum starf björgunarsveitarinnar, búnað, aðstöðu og verkefni.
-      </p>
-    </div>
-  </section>
-
-  <!-- Donate -->
-  <section class="content-section" id="donate">
-    <div class="container">
-      <h2>Styrkja starfið</h2>
-      <p>
-        Hægt er að styðja starf sveitarinnar með framlagi. Settu hér inn tengil á greiðslugátt eða styrktarsíðu.
-      </p>
-      <a class="donate-button" href="#">Styrkja núna</a>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="content-section light" id="contact">
-    <div class="container">
-      <h2>Hafa samband</h2>
-      <p>Netfang: info@sarice.is</p>
-      <p>Sími: 000 0000</p>
     </div>
   </section>
 
@@ -104,7 +126,7 @@
         const group = document.getElementById("group").value;
 
         alert(
-          `Takk fyrir, ${name}!\\n\\nVið höfum móttekið fyrirspurnina þína.\\nNetfang: ${email}\\nDagsetning: ${date}\\nFjöldi í hópi: ${group}`
+          `Takk fyrir, ${name}! Við höfum móttekið fyrirspurnina þína.\n\nNetfang: ${email}\nDagsetning: ${date}\nFjöldi í hópi: ${group}`
         );
 
         visitForm.reset();
