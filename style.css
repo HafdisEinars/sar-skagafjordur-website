@@ -42,6 +42,11 @@ img {
   letter-spacing: 0.5px;
 }
 
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
 /* HERO */
 .hero {
   position: relative;
@@ -49,13 +54,22 @@ img {
   background: url("rescue1.jpg") center center / cover no-repeat;
   display: flex;
   align-items: center;
-  padding: 120px 20px 80px;
+  padding: 120px 20px 100px;
+}
+
+.hero-small {
+  min-height: 52vh;
+  background: url("rescue2.jpg") center center / cover no-repeat;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.35));
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.35)
+  );
 }
 
 .hero-content {
@@ -65,7 +79,6 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   color: white;
-  max-width: 700px;
 }
 
 .hero-kicker {
@@ -80,6 +93,7 @@ img {
   margin: 0 0 18px;
   font-size: 3.4rem;
   line-height: 1.05;
+  max-width: 700px;
 }
 
 .hero-text {
@@ -126,6 +140,16 @@ img {
 
 .button-secondary:hover {
   background: rgba(255, 255, 255, 0.22);
+}
+
+.button-dark {
+  background: #111827;
+  border: none;
+  color: white;
+}
+
+.button-dark:hover {
+  background: #1f2937;
 }
 
 /* CARDS */
@@ -186,9 +210,9 @@ img {
   border: 2px solid #d52b1e;
 }
 
-/* CONTENT SECTIONS */
+/* CONTENT */
 .content-section {
-  padding: 90px 20px;
+  padding: 80px 20px;
 }
 
 .section-dark {
@@ -197,9 +221,9 @@ img {
 }
 
 .section-dark .section-label,
-.section-dark p,
-.section-dark h2 {
-  color: inherit;
+.section-dark h2,
+.section-dark p {
+  color: white;
 }
 
 .content-grid {
@@ -216,6 +240,15 @@ img {
   grid-template-columns: 0.95fr 1.05fr;
 }
 
+.section-label {
+  margin: 0 0 10px;
+  color: #d52b1e;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
 .text-column h2 {
   margin: 0 0 16px;
   font-size: 2.2rem;
@@ -227,15 +260,6 @@ img {
   font-size: 1.05rem;
 }
 
-.section-label {
-  margin: 0 0 10px;
-  color: #d52b1e;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-
 .image-column img {
   width: 100%;
   height: 420px;
@@ -244,25 +268,7 @@ img {
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
 }
 
-.centered-content {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.centered-content h2 {
-  margin: 0 0 14px;
-  font-size: 2.2rem;
-}
-
-.centered-content p {
-  margin: 0 auto;
-  max-width: 700px;
-  font-size: 1.05rem;
-}
-
-/* VISIT */
+/* VISIT / CONTACT BOX */
 .visit-section {
   padding: 0 20px 90px;
 }
@@ -286,6 +292,80 @@ img {
 .visit-box p {
   margin: 0 auto 22px;
   max-width: 650px;
+}
+
+/* CONTACT PAGE FORM */
+.visit-form-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.visit-info h2 {
+  margin: 0 0 14px;
+  font-size: 2.1rem;
+}
+
+.visit-info p {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+}
+
+.visit-form-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.visit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.visit-form label {
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.visit-form input,
+.visit-form textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.visit-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.visit-form input:focus,
+.visit-form textarea:focus {
+  outline: none;
+  border-color: #d52b1e;
+}
+
+.form-button {
+  margin-top: 8px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
 }
 
 /* FOOTER */
@@ -318,7 +398,8 @@ img {
   }
 
   .content-grid,
-  .content-grid.reverse {
+  .content-grid.reverse,
+  .visit-form-wrapper {
     grid-template-columns: 1fr;
   }
 
@@ -355,5 +436,14 @@ img {
 
   .image-column img {
     height: 280px;
+  }
+
+  .visit-form-card {
+    padding: 22px;
+  }
+
+  .form-button {
+    width: 100%;
+    text-align: center;
   }
 }
