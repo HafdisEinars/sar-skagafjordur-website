@@ -52,14 +52,16 @@ img {
   position: relative;
   min-height: 78vh;
   background: url("rescue1.jpg") center center / cover no-repeat;
+  background-color: #1f2937;
   display: flex;
   align-items: center;
   padding: 120px 20px 100px;
 }
 
 .hero-small {
-  min-height: 52vh;
-  background: url("rescue2.jpg") center center / cover no-repeat;
+  min-height: 60vh;
+  background: url("rescue1.jpg") center center / cover no-repeat;
+  background-color: #1f2937;
 }
 
 .hero-overlay {
@@ -144,8 +146,8 @@ img {
 
 .button-dark {
   background: #111827;
-  border: none;
   color: white;
+  border: none;
 }
 
 .button-dark:hover {
@@ -195,35 +197,13 @@ img {
 }
 
 .card-dark {
-  background: #1f2937;
+  background: #111827;
   color: white;
-}
-
-.card-light {
-  background: #e5e7eb;
-  color: #111111;
-}
-
-.card-outline {
-  background: white;
-  color: #d52b1e;
-  border: 2px solid #d52b1e;
 }
 
 /* CONTENT */
 .content-section {
   padding: 80px 20px;
-}
-
-.section-dark {
-  background: #111827;
-  color: white;
-}
-
-.section-dark .section-label,
-.section-dark h2,
-.section-dark p {
-  color: white;
 }
 
 .content-grid {
@@ -234,10 +214,6 @@ img {
   grid-template-columns: 1.05fr 0.95fr;
   gap: 40px;
   align-items: center;
-}
-
-.content-grid.reverse {
-  grid-template-columns: 0.95fr 1.05fr;
 }
 
 .section-label {
@@ -260,12 +236,13 @@ img {
   font-size: 1.05rem;
 }
 
-.image-column img {
+.content-image {
   width: 100%;
   height: 420px;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+  background: #d1d5db;
 }
 
 /* VISIT / CONTACT BOX */
@@ -398,12 +375,11 @@ img {
   }
 
   .content-grid,
-  .content-grid.reverse,
   .visit-form-wrapper {
     grid-template-columns: 1fr;
   }
 
-  .image-column img {
+  .content-image {
     height: 360px;
   }
 }
@@ -434,7 +410,7 @@ img {
     padding: 70px 20px;
   }
 
-  .image-column img {
+  .content-image {
     height: 280px;
   }
 
