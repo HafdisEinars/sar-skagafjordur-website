@@ -5,17 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Contact Skagfirðingasveit about visits, groups, collaboration, and general questions."
+    content="Contact Skagfirðingasveit about visits, stories, groups, collaboration, and general questions."
   />
   <title>Contact Us | Skagfirðingasveit</title>
-  <link rel="stylesheet" href="style.css?v=61" />
-  <script src="script.js?v=61" defer></script>
+  <link rel="stylesheet" href="style.css?v=62" />
+  <script src="script.js?v=62" defer></script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="header-inner">
       <h1><a href="index.html" class="logo-link">Skagfirðingasveit</a></h1>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="stories.html">Stories</a>
+        <a href="visit.html">Contact</a>
+        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </nav>
     </div>
   </header>
 
@@ -25,8 +31,8 @@
       <p class="hero-kicker">Contact Us</p>
       <h2>Get in touch</h2>
       <p class="hero-text">
-        We welcome schools, groups, and guests who want to learn more about
-        our volunteer search and rescue work in North Iceland.
+        We welcome schools, groups, guests, and community members who want to
+        connect with our volunteer search and rescue work in North Iceland.
       </p>
     </div>
   </section>
@@ -37,13 +43,25 @@
         <p class="section-label">Contact</p>
         <h2>Send us a message</h2>
         <p>
-          Use the form to contact us about visits, groups, collaboration,
+          Use the form to contact us about visits, stories, groups, collaboration,
           or general questions. Your mail app will open with a ready-to-send email.
         </p>
         <p>
           We are always happy to hear from schools, community groups,
           visitors, and supporters who want to connect with our team.
         </p>
+
+        <div class="contact-details">
+          <p>
+            <strong>Address</strong><br />
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Borgarr%C3%B6st%201%2C%20550%20Sau%C3%B0%C3%A1rkr%C3%B3ki%2C%20%C3%8Dsland" target="_blank" rel="noopener noreferrer">Borgarröst 1, 550 Sauðárkróki, Ísland</a>
+          </p>
+          <p>
+            <strong>Facebook</strong><br />
+            <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer">facebook.com/Bjargari</a>
+          </p>
+        </div>
+
         <p class="fallback-contact">
           If your mail app does not open, email us directly at
           <a href="mailto:skagfirdingasveitskr@gmail.com">skagfirdingasveitskr@gmail.com</a>.
@@ -53,6 +71,16 @@
 
       <div class="visit-form-card">
         <form id="visit-form" class="visit-form">
+          <div class="form-group">
+            <label for="topic">What is this about?</label>
+            <select id="topic" name="topic">
+              <option value="General contact">General contact</option>
+              <option value="Visit request">Visit request</option>
+              <option value="Story or memory">Story or memory</option>
+              <option value="Collaboration">Collaboration</option>
+            </select>
+          </div>
+
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" autocomplete="name" required />
@@ -79,7 +107,7 @@
               id="message"
               name="message"
               rows="5"
-              placeholder="Tell us a little about your group or what you would like to know."
+              placeholder="Tell us a little about your group, visit, story, or question."
             ></textarea>
           </div>
 
@@ -98,6 +126,14 @@
       <p>
         Contact:
         <a href="mailto:skagfirdingasveitskr@gmail.com">skagfirdingasveitskr@gmail.com</a>
+      </p>
+      <p>
+        Address:
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Borgarr%C3%B6st%201%2C%20550%20Sau%C3%B0%C3%A1rkr%C3%B3ki%2C%20%C3%8Dsland" target="_blank" rel="noopener noreferrer">Borgarröst 1, 550 Sauðárkróki, Ísland</a>
+      </p>
+      <p>
+        Facebook:
+        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer">facebook.com/Bjargari</a>
       </p>
     </div>
   </footer>
