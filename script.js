@@ -1,30 +1,30 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Search and Rescue - Skagfirðingasveit website loaded");
+const CONTACT_EMAIL = "skagfirdingasveitskr@gmail.com";
 
+document.addEventListener("DOMContentLoaded", () => {
   const visitForm = document.getElementById("visit-form");
 
-  if (visitForm) {
-    visitForm.addEventListener("submit", (event) => {
-      event.preventDefault();
+  if (!visitForm) {
+    return;
+  }
 
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const date = document.getElementById("date").value;
-      const group = document.getElementById("group").value;
-      const message = document.getElementById("message").value;
+  visitForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-      const subject = "Book a visit to the rescue team";
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const date = document.getElementById("date").value;
+    const group = document.getElementById("group").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-      const body = `Name: ${name}
+    const subject = "Contact request from sarice.is";
+    const body = `Name: ${name}
 Email: ${email}
-Preferred date: ${date}
-Group size: ${group}
+Preferred date: ${date || "Not provided"}
+Group size: ${group || "Not provided"}
 
 Message:
-${message}`;
+${message || "No message provided."}`;
 
-      window.location.href =
-        `mailto:skagfirdingasveitskr@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    });
-  }
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
 });
