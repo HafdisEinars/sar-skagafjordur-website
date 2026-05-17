@@ -39,7 +39,8 @@ img {
   margin: 0;
   color: white;
   font-size: 1.8rem;
-  letter-spacing: 0.5px;
+  line-height: 1.1;
+  letter-spacing: 0;
 }
 
 .logo-link {
@@ -115,7 +116,7 @@ img {
 .button {
   display: inline-block;
   padding: 14px 22px;
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
@@ -123,6 +124,15 @@ img {
 
 .button:hover {
   transform: translateY(-2px);
+}
+
+.button:focus-visible,
+.card:focus-visible,
+.logo-link:focus-visible,
+.footer-inner a:focus-visible,
+.visit-info a:focus-visible {
+  outline: 3px solid rgba(213, 43, 30, 0.45);
+  outline-offset: 4px;
 }
 
 .button-primary {
@@ -168,7 +178,7 @@ img {
 
 .card {
   padding: 28px 22px;
-  border-radius: 14px;
+  border-radius: 8px;
   text-decoration: none;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -240,7 +250,7 @@ img {
   width: 100%;
   height: 420px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 8px;
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
   background: #d1d5db;
 }
@@ -255,7 +265,7 @@ img {
   max-width: 900px;
   margin: 0 auto;
   background: white;
-  border-radius: 18px;
+  border-radius: 8px;
   padding: 42px 30px;
   text-align: center;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
@@ -292,9 +302,17 @@ img {
   font-size: 1.05rem;
 }
 
+.fallback-contact a,
+.footer-inner a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 .visit-form-card {
   background: white;
-  border-radius: 18px;
+  border-radius: 8px;
   padding: 28px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
@@ -312,7 +330,7 @@ img {
 
 .visit-form label {
   font-weight: bold;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   margin-bottom: 8px;
   color: #111827;
 }
@@ -322,7 +340,7 @@ img {
   width: 100%;
   padding: 16px 18px;
   border: 1px solid #d1d5db;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 1rem;
   font-family: Arial, sans-serif;
 }
@@ -336,6 +354,7 @@ img {
 .visit-form textarea:focus {
   outline: none;
   border-color: #d52b1e;
+  box-shadow: 0 0 0 3px rgba(213, 43, 30, 0.12);
 }
 
 .form-button {
@@ -391,31 +410,71 @@ img {
     padding: 18px 0;
   }
 
+  .site-header h1 {
+    font-size: 1.45rem;
+  }
+
   .hero {
-    min-height: 70vh;
-    padding-top: 70px;
+    min-height: 66vh;
+    padding: 72px 20px 78px;
+  }
+
+  .hero-small {
+    min-height: 52vh;
   }
 
   .hero-content h2 {
-    font-size: 2.4rem;
+    font-size: 2.25rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-buttons .button {
+    width: 100%;
+    text-align: center;
   }
 
   .cards {
     grid-template-columns: 1fr;
     margin-top: 0;
-    padding-top: 30px;
+    padding-top: 28px;
+    gap: 16px;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 24px 20px;
   }
 
   .content-section {
-    padding: 70px 20px;
+    padding: 64px 20px;
+  }
+
+  .content-grid,
+  .visit-form-wrapper {
+    width: 92%;
+    gap: 28px;
+  }
+
+  .text-column h2,
+  .visit-info h2,
+  .visit-box h2 {
+    font-size: 1.8rem;
   }
 
   .content-image {
     height: 280px;
   }
 
+  .visit-section {
+    padding: 0 20px 70px;
+  }
+
+  .visit-box,
   .visit-form-card {
-    padding: 22px;
+    padding: 28px 22px;
   }
 
   .form-button {
