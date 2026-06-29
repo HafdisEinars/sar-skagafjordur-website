@@ -564,4 +564,31 @@ img {
     width: 100%;
     text-align: center;
   }
+  .story-page{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.story-hero{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:30px;
+}
+
+.story-intro{
+    font-size:1.3rem;
+    font-weight:500;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.story-page p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+.story-page h1{
+    font-size:42px;
+}
 }
