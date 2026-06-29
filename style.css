@@ -591,4 +591,71 @@ img {
 .story-page h1{
     font-size:42px;
 }
+  .story-page{
+    max-width:900px;
+    margin:auto;
+    padding:50px 20px;
+    line-height:1.8;
+}
+
+.story-hero{
+    width:100%;
+    border-radius:14px;
+    margin-bottom:35px;
+}
+
+.story-page h1{
+    font-size:46px;
+    margin-bottom:15px;
+}
+
+.story-page h2{
+    margin-top:45px;
+    margin-bottom:15px;
+}
+
+.story-intro{
+    font-size:1.35rem;
+    color:#666;
+    font-style:italic;
+    margin-bottom:30px;
+}
+
+.story-image{
+    width:100%;
+    border-radius:12px;
+    margin:40px 0;
+}
+
+.story-values{
+    margin:20px 0 30px 30px;
+}
+
+.story-values li{
+    margin-bottom:10px;
+}
+
+.story-quote{
+    margin:50px auto;
+    padding:25px;
+    font-size:1.4rem;
+    text-align:center;
+    font-style:italic;
+    color:#004d66;
+    border-left:5px solid #0b8db3;
+    background:#f5fbfd;
+    border-radius:8px;
+}
+
+.story-signature{
+    text-align:right;
+    font-weight:bold;
+    margin-bottom:50px;
+}
+
+.story-links{
+    background:#f8f8f8;
+    padding:25px;
+    border-radius:10px;
+}
 }
