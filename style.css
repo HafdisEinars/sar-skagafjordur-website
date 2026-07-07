@@ -462,13 +462,17 @@ img {
   margin: 36px 0;
 }
 
+.story-body ul,
 .story-values {
   margin: 22px 0 30px 22px;
+  padding-left: 18px;
 }
 
+.story-body li,
 .story-values li {
   margin-bottom: 10px;
   font-size: 1.06rem;
+  line-height: 1.7;
 }
 
 .story-quote {
