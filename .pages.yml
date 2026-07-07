@@ -1,0 +1,102 @@
+media:
+  - name: story_images
+    label: Story Images
+    input: media/stories
+    output: /media/stories
+    rename: safe
+    categories: [image]
+
+content:
+  - name: stories
+    label: Stories
+    type: collection
+    path: _stories
+    filename:
+      template: "{primary}.md"
+      field: create
+    format: yaml-frontmatter
+    view:
+      primary: title
+      fields: [date, published, kicker]
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: published
+        label: Published
+        type: boolean
+        required: true
+      - name: description
+        label: Meta Description
+        type: text
+        description: Short search-engine description for this story.
+      - name: kicker
+        label: Small Heading
+        type: string
+        description: Short label shown above the story title.
+      - name: hero_image
+        label: Main Image
+        type: image
+        required: true
+      - name: hero_alt
+        label: Image Description
+        type: string
+        required: true
+      - name: intro
+        label: Intro Text
+        type: text
+        required: true
+      - name: summary
+        label: Story Card Summary
+        type: text
+        required: true
+      - name: location
+        label: Location
+        type: string
+      - name: visitor
+        label: Visitor
+        type: string
+      - name: theme
+        label: Theme
+        type: string
+      - name: status
+        label: Status
+        type: select
+        options:
+          values: [Draft, Published story]
+      - name: links
+        label: Learn More Links
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - name: label
+            label: Link Text
+            type: string
+            required: true
+          - name: url
+            label: URL
+            type: string
+            required: true
+      - name: signature
+        label: Signature
+        type: string
+      - name: body
+        label: Story Body
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          media: story_images
+          path: media/stories
+          rename: safe
+          switcher: true
