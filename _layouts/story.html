@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="{{ page.description | default: page.intro | default: page.title | strip_html | escape }}"
+  />
+  <title>{{ page.title | escape }} | Skagfirðingasveit</title>
+  <link rel="stylesheet" href="style.css?v=64" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1><a href="index.html" class="logo-link">Skagfirðingasveit</a></h1>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="stories.html">Stories</a>
+        <a href="visit.html">Contact</a>
+        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="story-page">
+    <article class="story-article">
+      <img src="{{ page.hero_image | default: 'rescue3.jpg' | relative_url }}" alt="{{ page.hero_alt | default: page.title | escape }}" class="story-hero-image" />
+
+      <p class="story-meta">{{ page.kicker | default: page.theme | default: 'Rescue Story' | escape }}</p>
+      <h1>{{ page.title | escape }}</h1>
+
+      {% if page.intro %}
+      <p class="story-intro">
+        {{ page.intro | escape }}
+      </p>
+      {% endif %}
+
+      <div class="story-body">
+        {{ content }}
+
+        {% if page.signature %}
+        <p class="story-signature">
+          &mdash; {{ page.signature | escape }}
+        </p>
+        {% endif %}
+
+        <div class="story-info-card">
+          <h3>Story Information</h3>
+          {% if page.location %}<p><strong>Location:</strong> {{ page.location | escape }}</p>{% endif %}
+          {% if page.visitor %}<p><strong>Visitor:</strong> {{ page.visitor | escape }}</p>{% endif %}
+          {% if page.theme %}<p><strong>Theme:</strong> {{ page.theme | escape }}</p>{% endif %}
+          {% if page.status %}<p><strong>Status:</strong> {{ page.status | escape }}</p>{% endif %}
+        </div>
+
+        {% if page.links %}
+        <div class="story-links">
+          <h3>Learn More</h3>
+          {% for link in page.links %}
+            {% if link.label and link.url %}
+            <p>
+              <a href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer">
+                {{ link.label | escape }}
+              </a>
+            </p>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="story-back-link">
+          <a href="stories.html">&larr; Back to Rescue Stories</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <h3>Skagfirðingasveit</h3>
+      <p>Volunteer search and rescue in North Iceland.</p>
+      <p>
+        Contact:
+        <a href="mailto:skagfirdingasveitskr@gmail.com">skagfirdingasveitskr@gmail.com</a>
+      </p>
+      <p>
+        Address:
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Borgarr%C3%B6st%201%2C%20550%20Sau%C3%B0%C3%A1rkr%C3%B3ki%2C%20%C3%8Dsland" target="_blank" rel="noopener noreferrer">Borgarröst 1, 550 Sauðárkróki, Ísland</a>
+      </p>
+      <p>
+        Facebook:
+        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer">facebook.com/Bjargari</a>
+      </p>
+    </div>
+  </footer>
+
+  <script data-goatcounter="https://sarice.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
