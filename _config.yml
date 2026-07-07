@@ -1,0 +1,20 @@
+title: Skagfirðingasveit
+description: Volunteer search and rescue in North Iceland.
+url: "https://sarice.is"
+baseurl: ""
+markdown: kramdown
+
+collections:
+  stories:
+    output: true
+    permalink: /:name.html
+
+defaults:
+  - scope:
+      path: ""
+      type: stories
+    values:
+      layout: story
+      published: true
+      status: Published story
+      signature: Skagfirðingasveit Search and Rescue Team
