@@ -1,3 +1,6 @@
+---
+title: Rescue Stories
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,20 +50,23 @@
     </div>
 
     <div class="story-card-grid">
-
-      <a href="story1.html" class="story-card">
-        <img src="story1b.jpg" alt="Visitors connected to the first rescue story" />
+      {% assign sorted_stories = site.stories | sort: "date" | reverse %}
+      {% for story in sorted_stories %}
+        {% unless story.published == false %}
+      <a href="{{ story.url | relative_url }}" class="story-card">
+        <img src="{{ story.card_image | default: story.hero_image | default: 'rescue3.jpg' | relative_url }}" alt="{{ story.hero_alt | default: story.title | escape }}" />
 
         <div class="story-card-content">
-          <p class="section-label">A Visit and a Conversation</p>
-          <h3>A Visit from Washington State</h3>
+          <p class="section-label">{{ story.kicker | default: story.theme | default: 'Rescue Story' | escape }}</p>
+          <h3>{{ story.title | escape }}</h3>
           <p>
-            Glenn Yates visited Skagfirðingasveit and shared items and history
-            from his family's long connection to Search and Rescue.
+            {{ story.summary | default: story.excerpt | strip_html | truncate: 170 }}
           </p>
-          <span class="story-card-link">Read Story →</span>
+          <span class="story-card-link">Read Story &rarr;</span>
         </div>
       </a>
+        {% endunless %}
+      {% endfor %}
 
       <div class="story-card story-card-coming">
         <div class="story-card-content">
