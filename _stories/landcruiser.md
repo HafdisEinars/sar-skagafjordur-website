@@ -1,6 +1,6 @@
 ---
 title: A New 44-Inch Rescue Vehicle for Skagfirðingasveit
-date: 2026-07-07
+date: 2026-07-06
 published: true
 hero_image: /media/stories/59743618916041484276997473864702128817048201n.jpg
 hero_alt: The new car just before it was completely ready.
