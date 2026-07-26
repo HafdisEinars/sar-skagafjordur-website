@@ -349,6 +349,21 @@ img {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
+.home-contact-box {
+  background: linear-gradient(135deg, #ffffff 0%, #fff6f4 100%);
+  border: 1px solid rgba(213, 43, 30, 0.18);
+  border-left: 6px solid #d52b1e;
+  box-shadow: 0 16px 34px rgba(213, 43, 30, 0.14);
+}
+
+.home-contact-box .section-label {
+  color: #b92217;
+}
+
+.home-contact-box h2 {
+  color: #111827;
+}
+
 .visit-box p {
   margin: 0 auto 22px;
   max-width: 650px;
