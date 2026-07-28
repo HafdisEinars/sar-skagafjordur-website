@@ -4,8 +4,8 @@ date: 2026-07-28
 published: true
 description: "The story of Aldan, Skagfirðingasveit's rescue boat in Sauðárkrókur, made possible through the support of FISK Seafood."
 kicker: "Sea Rescue"
-hero_image: "rescue3.jpg"
-hero_alt: "Skagfirðingasveit rescue team volunteers in the field"
+hero_image: "/media/stories/aldan-rescue-boat.svg"
+hero_alt: "Aldan rescue boat underway on the water in Skagafjörður"
 intro: "Aldan is Skagfirðingasveit's rescue boat, strengthening the team's ability to respond on the sea, along the coast and on inland waters."
 summary: "Aldan was delivered to Skagfirðingasveit on 15 March 2025 after generous support from FISK Seafood, strengthening sea rescue in Skagafjörður."
 location: "Sauðárkrókur and Skagafjörður, Iceland"
