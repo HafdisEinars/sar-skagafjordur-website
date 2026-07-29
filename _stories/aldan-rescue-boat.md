@@ -4,7 +4,7 @@ date: 2026-07-28
 published: true
 description: "The story of Aldan, Skagfirðingasveit's rescue boat in Sauðárkrókur, made possible through the support of FISK Seafood and Garmin."
 kicker: "Sea Rescue"
-hero_image: "/media/stories/aldan-rescue-boat.svg"
+hero_image: "/media/stories/aldan-rescue-boat.jpg"
 hero_alt: "Aldan rescue boat underway on the water in Skagafjörður"
 intro: "Aldan is Skagfirðingasveit's 6-metre rigid-hulled rescue boat, strengthening response on the sea, along the coast and on inland waters."
 summary: "Aldan was delivered to Skagfirðingasveit on 15 March 2025 after generous support from FISK Seafood, with Garmin equipment donated by the Garmin store in Reykjavík."
