@@ -5,8 +5,8 @@ updated: 2026-08-06
 published: true
 description: "A respectful account of the 2013 search in Hjaltadalsá, based on a team member's recollection and contemporary news reports."
 kicker: "Search Mission"
-hero_image: "rescue3.jpg"
-hero_alt: "Search and rescue volunteers working in challenging Icelandic conditions"
+hero_image: "hjaltadalsa-search.svg"
+hero_alt: "Searchers working along the flooded Hjaltadalsá river in Skagafjörður"
 intro: "In June 2013, a callout to Hjaltadalsá became one of those missions that stays with a rescue team long after the search is over."
 summary: "A remembrance of the large-scale search in Hjaltadalsá in June 2013, when floodwater, teamwork and difficult conditions shaped every decision."
 location: "Hjaltadalsá, Skagafjörður, Iceland"
