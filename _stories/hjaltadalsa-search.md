@@ -1,6 +1,7 @@
 ---
 title: "Hjaltadalsá: A Search in Floodwater"
 date: 2026-08-06
+updated: 2026-08-06
 published: true
 description: "A respectful account of the 2013 search in Hjaltadalsá, based on a team member's recollection and contemporary news reports."
 kicker: "Search Mission"
