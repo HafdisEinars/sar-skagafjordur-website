@@ -55,7 +55,7 @@ title: Rescue Stories
       {% for story in sorted_stories %}
         {% unless story.published == false %}
       <a href="{{ story.url | relative_url }}" class="story-card">
-        <img src="{{ story.card_image | default: story.hero_image | default: 'rescue3.jpg' | relative_url }}" alt="{{ story.hero_alt | default: story.title | escape }}" />
+        <img src="{{ story.card_image | default: story.hero_image | default: 'rescue3.jpg' | relative_url }}" alt="{{ story.hero_alt | default: story.title | escape }}"{% if story.image_position %} style="object-position: {{ story.image_position | escape }};"{% endif %} />
 
         <div class="story-card-content">
           <p class="section-label">{{ story.kicker | default: story.theme | default: 'Rescue Story' | escape }}</p>
