@@ -29,7 +29,7 @@
 
   <main class="story-page">
     <article class="story-article">
-      <img src="{{ page.hero_image | default: 'rescue3.jpg' | relative_url }}" alt="{{ page.hero_alt | default: page.title | escape }}" class="story-hero-image" />
+      <img src="{{ page.hero_image | default: 'rescue3.jpg' | relative_url }}" alt="{{ page.hero_alt | default: page.title | escape }}" class="story-hero-image"{% if page.image_position %} style="object-position: {{ page.image_position | escape }};"{% endif %} />
 
       <p class="story-meta">{{ page.kicker | default: page.theme | default: 'Rescue Story' | escape }}</p>
       <h1>{{ page.title | escape }}</h1>
