@@ -4,8 +4,9 @@ date: 2026-08-18
 published: true
 description: "A respectful account of the 2017 search for Birna Brjánsdóttir, focusing on the rescue teams, search methods, volunteers and community response."
 kicker: "National Search"
-hero_image: "rescue3.jpg"
-hero_alt: "Search and rescue volunteers in Iceland"
+hero_image: "media/stories/birna-search.png"
+hero_alt: "Search and rescue volunteer checking rocky terrain"
+image_position: "center 55%"
 intro: "In January 2017, the search for Birna Brjánsdóttir became one of Iceland's most extensive rescue team operations, bringing together volunteers, police, dog teams and specialist search units."
 summary: "A respectful account of the 2017 search for Birna Brjánsdóttir, focusing on the volunteers, search methods and national response rather than the criminal case."
 location: "Reykjavík, Hafnarfjörður, Reykjanes and Selvogsviti, Iceland"
