@@ -8,7 +8,7 @@
     content="{{ page.description | default: page.intro | default: page.title | strip_html | escape }}"
   />
   <title>{{ page.title | escape }} | Skagfirðingasveit</title>
-  <link rel="stylesheet" href="style.css?v=68" />
+  <link rel="stylesheet" href="style.css?v=69" />
 </head>
 
 <body>
@@ -21,8 +21,9 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="stories.html">Stories</a>
+        <a href="index.html#support">Support</a>
         <a href="visit.html">Contact</a>
-        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer" data-goatcounter-click="facebook-nav" data-goatcounter-title="Facebook nav click">Facebook</a>
       </nav>
     </div>
   </header>
@@ -63,7 +64,7 @@
           {% for link in page.links %}
             {% if link.label and link.url %}
             <p>
-              <a href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer">
+              <a href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer" data-goatcounter-click="story-source-link" data-goatcounter-title="{{ link.label | escape }}">
                 {{ link.label | escape }}
               </a>
             </p>
@@ -73,7 +74,7 @@
         {% endif %}
 
         <div class="story-back-link">
-          <a href="stories.html">&larr; Back to Rescue Stories</a>
+          <a href="stories.html" data-goatcounter-click="story-back-link" data-goatcounter-title="Back to Rescue Stories">&larr; Back to Rescue Stories</a>
         </div>
       </div>
     </article>

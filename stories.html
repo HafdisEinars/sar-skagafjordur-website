@@ -8,7 +8,7 @@ title: Rescue Stories
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Rescue Stories | Skagfirðingasveit</title>
-  <link rel="stylesheet" href="style.css?v=68" />
+  <link rel="stylesheet" href="style.css?v=69" />
 </head>
 
 <body>
@@ -21,8 +21,9 @@ title: Rescue Stories
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="stories.html">Stories</a>
+        <a href="index.html#support">Support</a>
         <a href="visit.html">Contact</a>
-        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer" data-goatcounter-click="facebook-nav" data-goatcounter-title="Facebook nav click">Facebook</a>
       </nav>
     </div>
   </header>
@@ -54,7 +55,7 @@ title: Rescue Stories
       {% assign sorted_stories = site.stories | sort: "date" | reverse %}
       {% for story in sorted_stories %}
         {% unless story.published == false %}
-      <a href="{{ story.url | relative_url }}" class="story-card">
+      <a href="{{ story.url | relative_url }}" class="story-card" data-goatcounter-click="story-card-click" data-goatcounter-title="{{ story.title | escape }}">
         <img src="{{ story.card_image | default: story.hero_image | default: 'rescue3.jpg' | relative_url }}" alt="{{ story.hero_alt | default: story.title | escape }}"{% if story.image_position %} style="object-position: {{ story.image_position | escape }};"{% endif %} />
 
         <div class="story-card-content">
@@ -97,6 +98,8 @@ title: Rescue Stories
         <a
           href="mailto:skagfirdingasveitskr@gmail.com?subject=Update%20list%20signup%20from%20sarice.is&amp;body=Please%20add%20me%20to%20the%20Skagfir%C3%B0ingasveit%20update%20list.%0A%0AName%3A%20%0AEmail%3A%20"
           class="button button-primary"
+          data-goatcounter-click="update-list-stories"
+          data-goatcounter-title="Join update list from stories page"
         >Join the Update List</a>
         <p class="newsletter-note">
           We will only use your email for occasional updates. You can unsubscribe at any time.
@@ -113,7 +116,7 @@ title: Rescue Stories
         Send it to the team by email. We can read it, follow up if needed,
         and decide later whether it belongs on this page.
       </p>
-      <a href="visit.html?topic=story" class="button button-primary">Share a Story</a>
+      <a href="visit.html?topic=story" class="button button-primary" data-goatcounter-click="share-story-cta" data-goatcounter-title="Share a story CTA">Share a Story</a>
     </div>
   </section>
 
@@ -123,11 +126,11 @@ title: Rescue Stories
       <p>Volunteer search and rescue in North Iceland.</p>
       <p>
         Contact:
-        <a href="mailto:skagfirdingasveitskr@gmail.com">skagfirdingasveitskr@gmail.com</a>
+        <a href="mailto:skagfirdingasveitskr@gmail.com" data-goatcounter-click="email-footer" data-goatcounter-title="Footer email click">skagfirdingasveitskr@gmail.com</a>
       </p>
       <p>
         Facebook:
-        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer">facebook.com/Bjargari</a>
+        <a href="https://www.facebook.com/Bjargari" target="_blank" rel="noopener noreferrer" data-goatcounter-click="facebook-footer" data-goatcounter-title="Footer Facebook click">facebook.com/Bjargari</a>
       </p>
     </div>
   </footer>

@@ -7,6 +7,19 @@ const SUBJECTS_BY_TOPIC = {
   Collaboration: "Collaboration request from sarice.is"
 };
 
+const trackGoatCounterEvent = (path, title) => {
+  if (!window.goatcounter || typeof window.goatcounter.count !== "function") {
+    return;
+  }
+
+  window.goatcounter.count({
+    path,
+    title,
+    event: true,
+    no_session: true
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   const visitForm = document.getElementById("visit-form");
   const topicSelect = document.getElementById("topic");
@@ -42,6 +55,8 @@ Group size: ${group || "Not provided"}
 
 Message:
 ${message || "No message provided."}`;
+
+    trackGoatCounterEvent("contact-form-submit", `Contact form submit: ${topic}`);
 
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
