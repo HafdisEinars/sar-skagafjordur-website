@@ -332,6 +332,96 @@ img {
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
 }
 
+/* TEAM TIMELINE */
+
+.timeline-section {
+  padding: 0 20px 90px;
+}
+
+.timeline-inner {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.timeline-heading {
+  max-width: 720px;
+  margin-bottom: 34px;
+}
+
+.timeline-heading h2 {
+  margin: 0 0 14px;
+  font-size: 2.2rem;
+  line-height: 1.15;
+}
+
+.timeline-heading p {
+  margin: 0;
+  color: #374151;
+  font-size: 1.05rem;
+}
+
+.team-timeline {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.team-timeline::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: 52px;
+  width: 3px;
+  background: #d52b1e;
+}
+
+.team-timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.timeline-year {
+  position: relative;
+  z-index: 1;
+  align-self: start;
+  min-width: 104px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+}
+
+.timeline-card {
+  background: white;
+  border-left: 4px solid #d52b1e;
+  border-radius: 8px;
+  padding: 20px 22px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.timeline-card p {
+  margin: 0;
+  color: #374151;
+  font-size: 1rem;
+}
+
 /* VISIT / CONTACT */
 
 .visit-section {
@@ -733,6 +823,41 @@ img {
   .visit-form-wrapper {
     width: 92%;
     gap: 28px;
+  }
+
+  .timeline-section {
+    padding: 0 20px 70px;
+  }
+
+  .timeline-inner {
+    width: 92%;
+  }
+
+  .timeline-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .team-timeline {
+    gap: 16px;
+  }
+
+  .team-timeline::before {
+    left: 39px;
+  }
+
+  .team-timeline li {
+    grid-template-columns: 80px 1fr;
+    gap: 14px;
+  }
+
+  .timeline-year {
+    min-width: 80px;
+    padding: 8px 6px;
+    font-size: 0.9rem;
+  }
+
+  .timeline-card {
+    padding: 18px 16px;
   }
 
   .text-column h2,
