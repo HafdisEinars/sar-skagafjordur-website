@@ -4,6 +4,7 @@ const SUBJECTS_BY_TOPIC = {
   "General contact": "Contact request from sarice.is",
   "Visit request": "Visit request from sarice.is",
   "Story or memory": "Story or memory from sarice.is",
+  "Online talk": "Online talk interest from sarice.is",
   Collaboration: "Collaboration request from sarice.is"
 };
 
@@ -33,6 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (params.get("topic") === "story") {
       topicSelect.value = "Story or memory";
+    }
+
+    if (params.get("topic") === "talk") {
+      topicSelect.value = "Online talk";
     }
   }
 

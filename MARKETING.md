@@ -12,6 +12,8 @@ that arrive with `utm_campaign` or `utm_source` parameters.
   `https://sarice.is/?utm_source=meta&utm_medium=paid_social&utm_campaign=support_rescue_team#support`
 - Stories-focused:
   `https://sarice.is/stories.html?utm_source=meta&utm_medium=paid_social&utm_campaign=rescue_stories`
+- Online talks:
+  `https://sarice.is/online-talks.html?utm_source=meta&utm_medium=paid_social&utm_campaign=online_talks`
 - Search ads / Iceland rescue team:
   `https://sarice.is/about.html?utm_source=google&utm_medium=paid_search&utm_campaign=iceland_rescue_team`
 
@@ -51,6 +53,29 @@ Headline: `Support a Volunteer Rescue Team in Iceland`
 Text: `Your support helps volunteers train, maintain equipment, and stay ready for the next callout in Skagafjörður.`
 
 Link: Support-focused campaign link
+
+### Option 4: Online talks
+
+Headline: `Inside Icelandic Search and Rescue`
+
+Text: `Join an online introduction to Icelandic volunteer rescue teams: training, equipment, callouts, youth work and the stories visitors ask about most.`
+
+Link: Online talks campaign link
+
+## Short video ideas
+
+- Hook: `What happens in Iceland when someone calls 1-1-2?`
+  CTA: `Join the online talk`
+- Hook: `Iceland does search and rescue differently. Here is why.`
+  CTA: `Meet the volunteers`
+- Hook: `This rescue team is run by volunteers aged 18 to 85.`
+  CTA: `Learn how it works`
+- Hook: `Why do Icelandic rescue teams sell fireworks?`
+  CTA: `Support the team`
+- Hook: `A small town rescue team, one boat, many callouts.`
+  CTA: `Watch the full talk`
+- Hook: `What tourists usually ask us about rescue work in Iceland.`
+  CTA: `Register interest`
 
 ## Practical targeting ideas
 
