@@ -1,6 +1,6 @@
 ---
 title: "Five and a Half Months Pregnant on Bláhnjúkur"
-date: 2026-09-11
+date: 2026-09-12
 event_date: 2017-07-22
 published: true
 description: "A personal story from Highland Watch in Landmannalaugar in July 2017, when Skagfirðingasveit responded to an injured hiker on Bláhnjúkur."
@@ -47,6 +47,11 @@ It soon became clear that carrying the injured hiker down the mountain by stretc
 Contemporary news reports described fog and demanding landing conditions. They also noted that rescue volunteers who were still on their way from the lowlands were turned back once the helicopter had completed the critical part of the response.
 
 Even when a helicopter becomes the visible centre of a mission, the work around it is still team work: the people on Highland Watch, the teams called out, the volunteers moving through the terrain, the local coordination and the helicopter crew all become part of the same response.
+
+<figure class="story-inline-figure">
+  <img src="https://www.visir.is/i/C27FA3B017ABF88894907E34D168DF2BFDA1242A04D774345E0DE7D895488106_713x0.jpg" alt="Rescue workers carrying a stretcher down the slope at Bláhnjúkur with the Coast Guard helicopter in the background" class="story-inline-image" />
+  <figcaption>Photo: Smári Sigurðsson.</figcaption>
+</figure>
 
 ## The Photo and the Rescue Trousers
 
