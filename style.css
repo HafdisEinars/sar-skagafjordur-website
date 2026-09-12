@@ -209,6 +209,18 @@ img {
   margin: 0;
 }
 
+.card-wide {
+  grid-column: 1 / -1;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-wide p {
+  max-width: 680px;
+}
+
 .card-red {
   background: #d52b1e;
   color: white;
